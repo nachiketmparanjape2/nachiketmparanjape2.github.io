@@ -1,4 +1,4 @@
 name: Nachiket Paranjape, Personal Website
 markdown: kramdown
-theme: merlot
+theme: minimal
 permalink: /blog/:year/:month/:day/:title
