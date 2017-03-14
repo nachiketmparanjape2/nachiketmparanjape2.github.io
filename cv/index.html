@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: cvlayout
 ---
 <div class="container-fluid">
     <div class="row-fluid">
@@ -99,7 +99,8 @@ layout: default
                   <ul class="list-unstyled list-stackoverflow" id="stackoverflow_questions_and_answers"></ul>
                   <script type="text/javascript">
                   $(function () {
-                    var api_url_user = "//api.stackexchange.com/2.2/users/{{ site.author.stackoverflow }}/answers?pagesize=5&order=desc&sort=votes&site=stackoverflow";
+                    var api_url_user = "//api.stackexchange.com/2.2/users/{{ site.author.stackoverflow }}/answers?
+                    size=5&order=desc&sort=votes&site=stackoverflow";
                     var api_url_format_questions = "//api.stackexchange.com/2.2/questions/%question_ids%?site=stackoverflow";
 
                     $.get(api_url_user, function (data_user) {
