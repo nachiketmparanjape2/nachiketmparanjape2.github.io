@@ -1,3 +1,6 @@
+name: Hank Quinlan, Horrible Cop
+markdown: kramdown
+
 # Site settings
 title: Dong Liang's CV 
 description: ddbullfrog's CV
@@ -10,7 +13,7 @@ google_analytics: UA-63653234-1
 # Build settings
 markdown: kramdown
 
-exclude: [vendor]
+#exclude: [vendor]
 
 # Author settings
 author:
