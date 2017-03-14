@@ -17,26 +17,26 @@ markdown: kramdown
 
 # Author settings
 author:
-  name: Dong Liang
-  title: Java Developer
-  address: Auckland, New Zealand
-  email: dongg.liang@gmail.com
-  link: http://ddbullfrog.com
+  name: Nachiket Paranjape
+  title: Data Analyst - self-taught programmer
+  address: Irvine, California
+  email: nachiketm.paranjape@hotmail.com
+  link: nachiketmparanjape.github.io
   weibo:
-  github: ddbullfrog
-  linkedin: ddbullfrog
-  twitter: ddbullfrog
+  github: nachiketmparanjape
+  linkedin: nachiketm.paranjape
+  twitter: 
   gavatar: /resumecard/assets/img/avatar.JPG
   stackoverflow:
 #  stackoverflow: 4582127
   workHistory:
     - work1:
-      company: Finzsoft Solutions Ltd
-      location: Auckland, New Zealand
-      title: Java Developer
-      started: 2014
-      duration: (2014 - Present)
-      description: I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description.
+      company: Nano Engineered Applications
+      location: Irvine, California
+      title: Data Engineer
+      started: 2016
+      duration: (2016 - Present)
+      description: Developed a data pipeline to maintain a database containing sensor data. Designed and established an appropriate database to store terabites of data. Created dynamic dashboards and reports to visualize the data as it is as well as after variety of signal processing and other statistical analyses.
     - work2:
       company: Agfa HealthCare
       location: Shanghai, China
