@@ -2,3 +2,87 @@ name: Nachiket Paranjape, Data Skeptic
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
 
+# Site settings
+description: Nachiket's CV
+favicon: /assets/img/avatar.JPG
+# baseurl: https://ddbullfrog.github.io/resumecard
+# url: https://ddbullfrog.github.io/resumecard
+rss_url: /pages/atom.xml
+google_analytics: UA-63653234-1
+
+# Build settings
+
+
+#exclude: [vendor]
+
+# Author settings
+author:
+  name: Nachiket Paranjape
+  title: Data Analyst - self-taught programmer
+  address: Irvine, California
+  email: nachiketm.paranjape@hotmail.com
+  link: nachiketmparanjape.github.io
+  weibo:
+  github: nachiketmparanjape
+  linkedin: nachiketm.paranjape
+  twitter: 
+  gavatar: /resumecard/assets/img/avatar.JPG
+  stackoverflow:
+#  stackoverflow: 4582127
+  workHistory:
+    - work1:
+      company: Nano Engineered Applications
+      location: Irvine, California
+      title: Data Engineer
+      started: 2016
+      duration: (2016 - Present)
+      description: Developed a data pipeline to maintain a database containing sensor data. Designed and established an appropriate database to store terabites of data. Created dynamic dashboards and reports to visualize the data as it is as well as after variety of signal processing and other statistical analyses.
+    - work2:
+      company: Agfa HealthCare
+      location: Shanghai, China
+      title: Java Developer
+      started: 2012
+      duration: (2012 - 2014)
+      description: I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description.
+    - work3:
+      company: Citigroup Services and Technology (China) Limited
+      location: Shanghai, China
+      title: Java Developer
+      started: 2009
+      duration: (2009 - 2012)
+      description: I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description.
+  educationHistory:
+    - education1:
+      organization: Northeastern University
+      location: Shenyang, China
+      degree: Bachelor
+      major: Software Engineering
+      started: 2005
+      duration: (2005 - 2009)
+      description: I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description.
+  languages:
+    - language1:
+      name: Chinese
+      proficiency: Native
+    - language2:
+      name: English
+      proficiency: Professional
+    - language3:
+      name: Japanese
+      proficiency: Limit
+  programmingSkills:
+    - skill1:
+      name: Python
+      percentage: 80%
+    - skill2:
+      name: R
+      percentage: 60%
+    - skill3:
+      name: JavaScript
+      percentage: 70%
+    - skill4:
+      name: AngularJS
+      percentage: 70%
+    - skill5:
+      name: Java/Java EE
+      percentage: 90%
