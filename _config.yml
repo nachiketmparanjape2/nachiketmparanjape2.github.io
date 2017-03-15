@@ -1,11 +1,12 @@
-name: Nachiket's CV
+name: Nachiket Paranjape, Data Skeptic
 markdown: kramdown
+permalink: /blog/:year/:month/:day/:title
 
 # Site settings
 description: Nachiket's CV
 favicon: /assets/img/avatar.JPG
-baseurl: https://ddbullfrog.github.io/resumecard
-url: https://ddbullfrog.github.io/resumecard
+# baseurl: https://ddbullfrog.github.io/resumecard
+# url: https://ddbullfrog.github.io/resumecard
 rss_url: /pages/atom.xml
 google_analytics: UA-63653234-1
 
