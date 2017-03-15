@@ -1,12 +1,11 @@
-
 title: My Resume
 url: 'https://nachiketmparanjape.github.io'
-baseurl: '/cv/'
-markdown: kramdown
+baseurl: '/cv'
+#markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
 
 # Enable one of these styles by removing #. Style will be applied only after restarting the build or serve.
-style: styles-2
+#style: styles-2
 #style: styles-3
 #style: styles-4
 #style: styles-5
