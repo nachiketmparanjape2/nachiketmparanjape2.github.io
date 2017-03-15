@@ -1,4 +1,4 @@
-name: Nachiket Paranjape, Data Skeptic
+
 title: My Resume
 url: 'https://nachiketmparanjape.github.io'
 baseurl: '/cv'
@@ -14,8 +14,8 @@ style: styles-2
 
 
 #Profile information
-name: Alan Doe
-tagline: Full Stack Developer
+name: Nachiket Paranjape, Data Skeptic
+tagline: Data Analyst, self-taught programmer
 pic: profile.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
 #sidebar links
