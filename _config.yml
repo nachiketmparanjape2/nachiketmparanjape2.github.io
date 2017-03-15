@@ -1,7 +1,7 @@
 
 title: My Resume
 url: 'https://nachiketmparanjape.github.io'
-baseurl: '/cv'
+baseurl: '/cv/'
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
 
