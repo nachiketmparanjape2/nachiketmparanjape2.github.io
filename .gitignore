@@ -1,6 +1,3 @@
 _site/
-.sass-cache
-.idea
-resumecard.iml
-/*.iml
-Gemfile.lock
+.sass-cache/
+.jekyll-metadatak
