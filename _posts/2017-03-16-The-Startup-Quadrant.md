@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The Startup Quadrant"
-date: 2017-03-09
+date: 2017-03-16
 ---
 
 This is a recommendation system I build on Tableau to assist investors with a dashboard that informs about the most profitable startups.
