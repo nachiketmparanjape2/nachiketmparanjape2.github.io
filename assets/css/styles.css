@@ -8,6 +8,18 @@
 */
 /* styles.css */
 /* ======= Base ======= */
+
+nav ul, footer ul {
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    padding: 0px;
+    list-style: none;
+    font-weight: bold;
+}
+nav ul li, footer ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   color: #545E6C;
