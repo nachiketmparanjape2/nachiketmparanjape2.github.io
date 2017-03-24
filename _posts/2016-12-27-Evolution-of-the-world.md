@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Recreation of Hans Rosling's TED talk"
-date: 2017-03-16
+date: 2016-12-27
 ---
 
 I have tried to recreate a visualization that I first saw in [Hans Rosling's](http://www.ted.com/speakers/hans_rosling) TED talk. I was fascinated by it, so it seems to be an obvious choise. World Bank's data was used.
