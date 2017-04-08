@@ -67,11 +67,29 @@
   
   <!--//CSS-->
   
+  jQuery(document).ready(function() {
+    jQuery('.tabs .tab-links a').on('click', function(e)  {
+        var currentAttrValue = jQuery(this).attr('href');
+ 
+        // Show/Hide Tabs
+        jQuery('.tabs ' + currentAttrValue).show().siblings().hide();
+ 
+        // Change/remove current tab to active
+        jQuery(this).parent('li').addClass('active').siblings().removeClass('active');
+ 
+        e.preventDefault();
+    });
+});
+  
+<!--//JQuery-->
   
   
   
   
-                <div id ='project-tabs' class="tabs">
+  
+  
+  
+<div class="tabs">
     <ul class="tab-links" >
         <li class="active"><a href="#tab1">Python</a></li>
         <li><a href="#tab2">Tableau</a></li>
