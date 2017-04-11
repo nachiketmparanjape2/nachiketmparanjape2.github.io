@@ -21,9 +21,10 @@ pic: profile.png  #place a 100x100 picture inside /assets/images/ folder and pro
 email: nachiketm.paranjape@hotmail.com
 phone: 716-816-8381
 website: nachiketmparanjape.github.io #do not add http://
-linkedin: nachiketm.paranjape
+linkedin: nachiketmparanjape
 github: nachiketmparanjape
 #twitter: '@webjeda'
 instagram: nachiketparanjape
+tableau public: nachiket.madhav.paranjape
 
 #Update all the sections by editing the files inside _includes folder.
