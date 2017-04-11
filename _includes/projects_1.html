@@ -1,130 +1,64 @@
 <section class="section projects-section">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
-<script type="text/javascript" src="script.js"></script>
-  <script src="script.js"></script>
   <h2 class="section-title"><i class="fa fa-archive"></i>Projects</h2>
   <div class="intro">
-      <p>You can list your side projects or open source libraries in this section. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus.</p>
+      <p>My Projects - neatly seggregated according to the tools used.</p>
   </div><!--//intro-->
   
- <style>  
-.tabs {
-    width:100%;
-    display:inline-block;
-}
-    /*----- Tab Links -----*/
-    /* Clearfix */
-    .tab-links:after {
-        display:block;
-        clear:both;
-        content:'';
-    }
-    .tab-links li {
-        margin:0px 5px;
-        float:left;
-        list-style:none;
-    }
-        .tab-links a {
-            padding:9px 15px;
-            display:inline-block;
-            border-radius:3px 3px 0px 0px;
-            background:#7FB5DA;
-            font-size:16px;
-            font-weight:600;
-            color:#4c4c4c;
-            transition:all linear 0.15s;
-        }
-        .tab-links a:hover {
-            background:#a7cce5;
-            text-decoration:none;
-        }
-    li.active a, li.active a:hover {
-        background:#fff;
-        color:#4c4c4c;
-    }
-    /*----- Content of Tabs -----*/
-    .tab-content {
-        padding:15px;
-        border-radius:3px;
-        box-shadow:-1px 1px 1px rgba(0,0,0,0.15);
-        background:#fff;
-    }
-        .tab {
-            display:none;
-        }
-        .tab.active {
-            display:block;
-        }
+<style>
+  
+body { font-size: 80%; font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif; }
+ul#tabs { list-style-type: none; margin: 30px 0 0 0; padding: 0 0 0.3em 0; }
+ul#tabs li { display: inline; }
+ul#tabs li a { color: #42454a; background-color: #dedbde; border: 1px solid #c9c3ba; border-bottom: none; padding: 0.3em; text-decoration: none; }
+ul#tabs li a:hover { background-color: #f1f0ee; }
+ul#tabs li a.selected { color: #000; background-color: #f1f0ee; font-weight: bold; padding: 0.7em 0.3em 0.38em 0.3em; }
+div.tabContent { border: 1px solid #c9c3ba; padding: 0.5em; background-color: #f1f0ee; }
+div.tabContent.hide { display: none; }
    
-   </style>
+</style>
   
+<script type="text/javascript" src="script.js"></script>
   
+<ul id="tabs">
+  <li><a href="#python">Python</a></li>
+  <li><a href="#tableau">Tableau</a></li>
+</ul>
   
-  <!--//CSS-->
-  
-  
-  
-<!--//JQuery-->
-  
-  
-  
-  
-  
-  
-  
-<div class="tabs">
-    <ul class="tab-links" >
-        <li class="active"><a href="#tab1">Python</a></li>
-        <li class="active"><a href="#tab2">Tableau</a></li>
-    </ul>
-
-    <div class="tab-content">
-        <div id="tab1" class="tab active">
-        
-        <div class="item">
-                    <span class="project-title"><a href="#hook">Unrelated Project</a></span> - <span class="project-tagline">An exploration and interactive report generation for the geographical and demographic data of a bank</span>
-                    
-                </div><!--//item-->
-                <div class="item">
-                    <span class="project-title"><a href="#" target="_blank">DevStudio</a></span> - 
-                    <span class="project-tagline">A responsive website template designed to help web developers/designers market their services. </span>
-                </div><!--//item-->
-                <div class="item">
-                    <span class="project-title"><a href="#" target="_blank">Tempo</a></span> - <span class="project-tagline">A responsive website template designed to help startups promote their products or services and to attract users &amp; investors</span>
-                </div><!--//item-->
-                <div class="item">
-                    <span class="project-title"><a href="#" target="_blank">Atom</a></span> - <span class="project-tagline">A comprehensive website template solution for startups/developers to market their mobile apps. </span>
-                </div><!--//item-->
-                <div class="item">
-                    <span class="project-title"><a href="#" target="_blank">Delta</a></span> - <span class="project-tagline">A responsive Bootstrap one page theme designed to help app developers promote their mobile apps</span>
-                </div><!--//item-->  
-          
-        </div>
-
-        <div id="tab2" class="tab">
-        
-           <div class="item">
-                    <span class="project-title"><a href="#hook">Bank Demographics</a></span> - <span class="project-tagline">An exploration and interactive report generation for the geographical and demographic data of a bank</span>
-                    
-                </div><!--//item-->
-                <div class="item">
-                    <span class="project-title"><a href="#" target="_blank">DevStudio</a></span> - 
-                    <span class="project-tagline">A responsive website template designed to help web developers/designers market their services. </span>
-                </div><!--//item-->
-                <div class="item">
-                    <span class="project-title"><a href="#" target="_blank">Tempo</a></span> - <span class="project-tagline">A responsive website template designed to help startups promote their products or services and to attract users &amp; investors</span>
-                </div><!--//item-->
-                <div class="item">
-                    <span class="project-title"><a href="#" target="_blank">Atom</a></span> - <span class="project-tagline">A comprehensive website template solution for startups/developers to market their mobile apps. </span>
-                </div><!--//item-->
-                <div class="item">
-                    <span class="project-title"><a href="#" target="_blank">Delta</a></span> - <span class="project-tagline">A responsive Bootstrap one page theme designed to help app developers promote their mobile apps</span>
-                </div><!--//item-->
-      
-        </div>
-
-    </div>
+<div class="tabContent" id="python">
+  <h2>Python</h2>
+  <div>
+    
+    <div class="item">
+          <span class="project-title"><a href="../blog/2017/01/05/Titanic">Titanic</a></span> - 
+          <span class="project-tagline">Complete predictive analysis (Machine Learning) and competition submission including data cleaning, visualization and descriptive analysis.</span>
+    </div><!--//item-->
+                
+    <div class="item">
+          <span class="project-title"><a href="../blog/2017/03/03/Time-Series" target="_blank">Stocks</a></span> - 
+          <span class="project-tagline"> Fetching real-time stock market data to build ARIMA model for time-series analysis. Descriptive statistics and a tableau dashboard.</span>
+     </div><!--//item-->
+    
+    
+  </div>
 </div>
+  
+<div class="tabContent" id="tableau">
+  <h2>Tableau</h2>
+  <div>
+    
+    <div class="item">
+            <span class="project-title"><a href="../blog/2016/12/09/Segmentation-Imaginary-Bank">Bank Demographics</a></span> - 
+            <span class="project-tagline">A sample project to show TABLEAU skills. An exploration and interactive report generation for the geographical and demographic data of a bank</span>
+    </div><!--//item-->
+                
+    <div class="item">
+            <span class="project-title"><a href="../blog/2016/12/27/Evolution-of-the-world" target="_blank">Homage to Dr. Hans Rosling</a></span> - 
+            <span class="project-tagline"> My attempt at imitating the visualizations from Hans Rosling's TED talk. He has always been an inspiration.</span>
+    </div><!--//item-->
+    
+    
+  </div>
+</div>
+
                 
 </section><!--//section-->
