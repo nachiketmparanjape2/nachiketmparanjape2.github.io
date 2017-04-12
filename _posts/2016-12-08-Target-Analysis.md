@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Level of Detail"
+title: "Are we meeting the target?"
 date: 2016-12-08
 ---
 
@@ -9,6 +9,8 @@ We have the data from a departmental store. The CEO wants to see how the 3 main 
 Top half shows a bar chart of the sale with a grey area chart of the corresponding target in the backgroud.
 
 Bottom half show the value of sales - target, and it is color coded! Darker the blue, better the result :)
+
+This should give an insight on the sales performance of each department, giving us the absolute trends. Also, we can define the targets better using this data.
 
 <div class="Tableau_Embed">
 <p>
