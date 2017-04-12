@@ -7,10 +7,10 @@ Segmentation Analysis. This viz tell a story about a bank located in UK.
 
 It depicts the demographics of customers for different geographic regions of the country accompanied by a short summary on each region. Analysis is based on following vaiables -
 
-1.  Gender
-2.  Age
-3.  Nature of the profession
-4.  Account Balance
+1.)  Gender
+2.)  Age
+3.)  Nature of the profession
+4.)  Account Balance
 
 <div class="Tableau_Embed">
 <p>
