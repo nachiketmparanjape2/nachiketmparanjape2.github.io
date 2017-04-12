@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Segmentation Story with an imaginary bank"
+title: "Segmentation Story with an Imaginary Bank"
 date: 2016-12-09
 ---
 Segmentation Analysis. This viz tell a story about a bank located in UK.
