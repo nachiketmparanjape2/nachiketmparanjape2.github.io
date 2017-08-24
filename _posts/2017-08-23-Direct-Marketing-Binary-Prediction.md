@@ -34,28 +34,28 @@ Let's see at some of the visualization that can help us to get a qualitative ide
 ### 1. Age
 Kernel Density Estimation Plot with the hue of output variable 'y'
 
-<img src="https://github.com/nachiketmparanjape/nachiketmparanjape.github.io/blob/master/Post_Images/Age-kde-plot.png" alt="Mountain View" style="float:right;">
+<img src="https://github.com/nachiketmparanjape/nachiketmparanjape.github.io/blob/master/Post_Images/Age-kde-plot.png" alt="Age" style="float:center;">
 
 We can see that the response is better from the people who are young (below 29) and old (above 60)
 
 ### 2. Job
 Here is a bar plot representing proportional success for every profession category
 
-[insert image here]
+<img src="https://github.com/nachiketmparanjape/nachiketmparanjape.github.io/blob/master/Post_Images/Job-bar-plot.png" alt="Job" style="float:center;">
 
 Students are Retirees are amongst the people most likely to subscribe (25-30% subscribed), whereas it was half as successful for the professions that are greater in numbers such as Administrators, Blue-Collar and Technicians.
 
 ### 3. Marital Status
 How does it translate into successful subscriptions?
 
-[insert image here]
+<img src="https://github.com/nachiketmparanjape/nachiketmparanjape.github.io/blob/master/Post_Images/Marital-status-plot.png" alt="Marital-Status" style="float:center;">
 
 The probability of acceptance is (4%) more for single people. Which corroborates the hypothesis that more students are accepting the subscriptions than the others.
 
 ### 4. Education
 Proportion of people subscribed (left-y-axis) and Total number of people subscribed (right-y-axis) vs. Level of Education
 
-[insert image here]
+<img src="https://github.com/nachiketmparanjape/nachiketmparanjape.github.io/blob/master/Post_Images/Education-plot.png" alt="Education" style="float:center;">
 
 Here, 20% of illiterate population (total population is insignificantly small) seems to have subscribed. This can be a topic of study. If found substance, more illiterate people can be targeted to improve the overall response.
 
@@ -69,7 +69,8 @@ P-value for T-test turns out to be 7.25%. If we consider 5% as a threshold. So, 
 
 ### 5. Method of Contact
 
-[insert image here]
+<img src="https://github.com/nachiketmparanjape/nachiketmparanjape.github.io/blob/master/Post_Images/Method-of-contact-plot.png" alt="Method-of-contact" style="float:center;">
+
 
 Mean values for positive response are - 6% for telephone and 16% for cellular with relatively small std. Thus, we can assume an inclination towards cellular phone.
 
@@ -77,7 +78,7 @@ Mean values for positive response are - 6% for telephone and 16% for cellular wi
 
 ** Correlation Heatmap **
 
-[insert image here]
+<img src="https://github.com/nachiketmparanjape/nachiketmparanjape.github.io/blob/master/Post_Images/Numerical-colormap.png" alt="Corr-heatmap" style="float:center;">
 
 Following correlations seem strong -
 
@@ -87,11 +88,12 @@ Following correlations seem strong -
 
 Let's observe the correlations using lmplots from Seaborn library
 
-[insert images here]
+<img src="https://github.com/nachiketmparanjape/nachiketmparanjape.github.io/blob/master/Post_Images/Scatter-4.PNG" alt="Corr-heatmap" style="float:center;">
 
 We can also see correlation between variables that seem visibly correlated in the heatmap by simply observing the corr dataframe
 
-[insert image here]
+<img src="https://github.com/nachiketmparanjape/nachiketmparanjape.github.io/blob/master/Post_Images/Table.png" style="float:center;">
+
 
 # Prep and Data Science
 
