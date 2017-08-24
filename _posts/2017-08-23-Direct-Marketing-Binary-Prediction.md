@@ -12,8 +12,6 @@ Hence, whenever a marketing campaign chooses this method, it makes sense if we t
 
 Along with the primary goal of binary classification, we explore secondary qualitative insights about specific sections of societies that might respond to a specific type of marketing technique or a specific product. Let's start!
 
-### Dataset
-
 The [dateset](http://archive.ics.uci.edu/ml/datasets/Bank+Marketing) 41,188 datapoints with 20 attributes and one output variable.
 
 # Data Exploration
@@ -70,7 +68,7 @@ Mean values for positive response are - 6% for telephone and 16% for cellular wi
 
 [insert image here]
 
-**Following correlations seems strong -**
+Following correlations seem strong -
 
 * euribor3m - nr.employed - emp.var.rate
 * previous - nr.employed
@@ -84,7 +82,7 @@ We can also see correlation between variables that seem visibly correlated in th
 
 [insert image here]
 
-## Prep and Data Science
+# Prep and Data Science
 
 
 
