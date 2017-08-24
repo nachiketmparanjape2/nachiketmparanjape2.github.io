@@ -131,27 +131,30 @@ Hence, to improve recall I used a two step-approach -
 ### New Features
 
 **1. I binned a few numerical features to convert them to categorical as follows -**
-
-1) pdayscat - Converted pdays into a binary category
-
-  1) Customer was not contacted for previous campaign (pdays = 999)
- 
-  2) Customer was contacted for previous campaign (pdays != 999)
+<ol>
+<li> pdayscat - Converted pdays into a binary category
+ <ol>
+ <li> Customer was not contacted for previous campaign (pdays = 999) </li>
+ <li> Customer was contacted for previous campaign (pdays != 999) </li>
+ </ol>
+</li>
       
-2) agecat - Converted age into 3 categories based on observation
+<li> agecat - Converted age into 3 categories based on observation </li>
+  <ol>
+  <li>age <= 23</li>
+  <li>23 < age < 62</li>
+  <li>age >= 62</li>
+  </ol>
+</li>
+ 
+<li> campcat - Converted Campaign (number of contacts performed during this campaign and for this client) into a binary category based on observation
+  <ol>
+  <li>campaign <= 12</li>
+  <li>campaign > 12</li>
+  </ol>
+</li>
+</ol>
 
-  1) age <= 23
- 
-  2) 23 < age < 62
- 
-  3) age >= 62
- 
-3) campcat - Converted Campaign (number of contacts performed during this campaign and for this client) into a binary category based on observation
-
-  1) campaign <= 12
- 
-  2) campaign > 12
-      
 **2. Clustering for Feature Extraction -**
     I used two variables - age and campaign, performed clustering on them by manually seeding 4 centroids for 4 clusters to create another feature based on observation. The following figure to the left contains a scatter plot of the two variables with the hue of the response variable and the one to the right contains a scatter plot showing the clusters -
 
