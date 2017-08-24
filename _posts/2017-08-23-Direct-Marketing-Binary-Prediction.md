@@ -9,8 +9,8 @@ Note : This [repository](https://github.com/nachiketmparanjape/Bank_UCI) contain
 
 ### Jump to
 * [Introduction](#intro)
-* [Data Exploration]
-* [Features and Machine Learning]
+* [Data Exploration](#exploration)
+* [Features and Machine Learning](#science)
 
 
 # Introduction
