@@ -144,8 +144,16 @@ As we can see from the data, although the accuracy score is good, we see 80% of 
       1) campaign <= 12
       2) campaign > 12
       
-**2. lustering for Feature Extraction -**
+**2. Clustering for Feature Extraction -**
     I used two variables - age and campaign, performed clustering on them by manually seeding 4 centroids for 4 clusters to create another feature based on observation. The following figure to the left contains a scatter plot of the two variables with the hue of the response variable and the one to the right contains a scatter plot showing the clusters -
 
 [insert image here]
 
+##### Overfitting
+
+I also found out that if I overfit my model to a certain degree, it improves prediction of true positives without compromising too much on the accuracy on the test set. In my personal opinion, a certain degree of overfit is reasonable in the case.
+
+### Final Evaluation
+    Hence, here is my final model and the final results.
+    
+    [final results]
