@@ -25,7 +25,6 @@ Along with the primary goal of binary classification, we explore secondary quali
 
 The [dateset](http://archive.ics.uci.edu/ml/datasets/Bank+Marketing) 41,188 datapoints with 20 attributes and one output variable.
 
-#exploration
 # Data Exploration
 
 Let's see at some of the visualization that can help us to get a qualitative idea about the data, especially the categorical variables that are relatively easy to comprehend.
@@ -127,9 +126,9 @@ When the models were tuned for overall accuracy score, approximately 90% accurac
 
 As we can see from the data, although the accuracy score is good, we see 80% of the positives wrongly predicted as negatives. To put that in other words, we still have a large proportion of false negative and for our prediction model to be more useful we need to minimize that number, which implies maximizing recall while minimizing the possible increase in false positives. But, in our case, even if we end up increasing comparable numbers of false positives and true positives, it will still be more useful to us than the current model.
 
-#### Hence, to improve recall I used a two step-approach -
+Hence, to improve recall I used a two step-approach -
 
-##### New Features
+### New Features
 
 **1. I binned a few numerical features to convert them to categorical as follows -**
 
@@ -149,11 +148,12 @@ As we can see from the data, although the accuracy score is good, we see 80% of 
 
 [insert image here]
 
-##### Overfitting
+### Overfitting
 
 I also found out that if I overfit my model to a certain degree, it improves prediction of true positives without compromising too much on the accuracy on the test set. In my personal opinion, a certain degree of overfit is reasonable in the case.
 
-### Final Evaluation
-    Hence, here is my final model and the final results.
-    
-    [final results]
+## Final Evaluation
+
+Hence, here is my final model and the final results.
+
+[final results]
