@@ -42,7 +42,6 @@ We can see that the response is better from the people who are young (below 29) 
 ### 2. Job
 Here is a bar plot representing proportional success for every profession category
 
-<img src="https://user-images.githubusercontent.com/11637437/29684816-2e5614a0-88c8-11e7-8a67-2bddb30b2999.png" alt="Job" style="float:center;">
 ![job-bar-plot](https://user-images.githubusercontent.com/11637437/29684816-2e5614a0-88c8-11e7-8a67-2bddb30b2999.png)
 
 Students are Retirees are amongst the people most likely to subscribe (25-30% subscribed), whereas it was half as successful for the professions that are greater in numbers such as Administrators, Blue-Collar and Technicians.
@@ -50,14 +49,14 @@ Students are Retirees are amongst the people most likely to subscribe (25-30% su
 ### 3. Marital Status
 How does it translate into successful subscriptions?
 
-<img src="https://github.com/nachiketmparanjape/nachiketmparanjape.github.io/blob/master/Post_Images/Marital-status-plot.png" alt="Marital-Status" style="float:center;">
+![marital-status-plot](https://user-images.githubusercontent.com/11637437/29685173-7ee8d190-88c9-11e7-8a8c-f3f07f52a24a.png)
 
 The probability of acceptance is (4%) more for single people. Which corroborates the hypothesis that more students are accepting the subscriptions than the others.
 
 ### 4. Education
 Proportion of people subscribed (left-y-axis) and Total number of people subscribed (right-y-axis) vs. Level of Education
 
-<img src="https://github.com/nachiketmparanjape/nachiketmparanjape.github.io/blob/master/Post_Images/Education-plot.png" alt="Education" style="float:center;">
+![education-plot](https://user-images.githubusercontent.com/11637437/29685189-8e484bd4-88c9-11e7-8f68-3efcec61914b.png)
 
 Here, 20% of illiterate population (total population is insignificantly small) seems to have subscribed. This can be a topic of study. If found substance, more illiterate people can be targeted to improve the overall response.
 
@@ -71,7 +70,7 @@ P-value for T-test turns out to be 7.25%. If we consider 5% as a threshold. So, 
 
 ### 5. Method of Contact
 
-<img src="https://github.com/nachiketmparanjape/nachiketmparanjape.github.io/blob/master/Post_Images/Method-of-contact-plot.png" alt="Method-of-contact" style="float:center;">
+![method-of-contact-plot](https://user-images.githubusercontent.com/11637437/29685195-919d7d68-88c9-11e7-86ab-5be954618326.png)
 
 
 Mean values for positive response are - 6% for telephone and 16% for cellular with relatively small std. Thus, we can assume an inclination towards cellular phone.
@@ -80,7 +79,7 @@ Mean values for positive response are - 6% for telephone and 16% for cellular wi
 
 ** Correlation Heatmap **
 
-<img src="https://github.com/nachiketmparanjape/nachiketmparanjape.github.io/blob/master/Post_Images/Numerical-colormap.png" alt="Corr-heatmap" style="float:center;">
+![numerical-colormap](https://user-images.githubusercontent.com/11637437/29685199-92c8dc1e-88c9-11e7-9474-6f7671c4cb6c.png)
 
 Following correlations seem strong -
 
@@ -90,12 +89,11 @@ Following correlations seem strong -
 
 Let's observe the correlations using lmplots from Seaborn library
 
-<img src="https://github.com/nachiketmparanjape/nachiketmparanjape.github.io/blob/master/Post_Images/Scatter-4.PNG" alt="Corr-heatmap" style="float:center;">
+![scatter-4](https://user-images.githubusercontent.com/11637437/29685202-95191f2e-88c9-11e7-80f4-4e153513ab50.PNG)
 
 We can also see correlation between variables that seem visibly correlated in the heatmap by simply observing the corr dataframe
 
-<img src="https://github.com/nachiketmparanjape/nachiketmparanjape.github.io/blob/master/Post_Images/Table.png" style="float:center;">
-
+![table](https://user-images.githubusercontent.com/11637437/29685203-96327fc2-88c9-11e7-9de9-42f3df408840.png)
 
 # Prep and Data Science
 
@@ -162,7 +160,7 @@ Hence, to improve recall I used a two step-approach -
 **2. Clustering for Feature Extraction -**
     I used two variables - age and campaign, performed clustering on them by manually seeding 4 centroids for 4 clusters to create another feature based on observation. The following figure to the left contains a scatter plot of the two variables with the hue of the response variable and the one to the right contains a scatter plot showing the clusters -
 
-[insert image here]
+![scatter1](https://user-images.githubusercontent.com/11637437/29685204-9717b39e-88c9-11e7-876c-940947b6c120.png)
 
 ### Overfitting
 
