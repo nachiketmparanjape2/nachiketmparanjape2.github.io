@@ -5,7 +5,7 @@ date: 2017-08-23
 ---
 
 
-Note : This [repository](https://github.com/nachiketmparanjape/Bank_UCI) contains the code, the jupyter notebooks, the images and a report for this project.
+Note : This [repository](https://github.com/nachiketmparanjape/Bank_UCI) contains the code and the jupyter notebooks. This is the [report](https://docs.google.com/document/d/1xeAxD7FS3owV1hpMB-60B5gfO7iFvREwQ2YPB1Qp_co/edit?usp=sharing).
 
 ## Jump to
 
