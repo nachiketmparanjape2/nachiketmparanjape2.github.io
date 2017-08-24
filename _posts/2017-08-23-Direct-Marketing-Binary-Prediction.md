@@ -34,7 +34,7 @@ Let's see at some of the visualization that can help us to get a qualitative ide
 ### 1. Age
 Kernel Density Estimation Plot with the hue of output variable 'y'
 
-<img src="https://github.com/nachiketmparanjape/nachiketmparanjape.github.io/blob/master/Post_Images/Age-kde-plot.png" alt="Age" style="float:center;">
+![age-histogram](https://github.com/nachiketmparanjape/nachiketmparanjape.github.io/blob/master/Post_Images/Age-kde-plot.png)
 
 We can see that the response is better from the people who are young (below 29) and old (above 60)
 
