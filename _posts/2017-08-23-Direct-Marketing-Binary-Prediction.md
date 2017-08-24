@@ -42,7 +42,7 @@ We can see that the response is better from the people who are young (below 29) 
 ### 2. Job
 Here is a bar plot representing proportional success for every profession category
 
-<img src="https://github.com/nachiketmparanjape/nachiketmparanjape.github.io/blob/master/Post_Images/Job-bar-plot.png" alt="Job" style="float:center;">
+<img src="https://user-images.githubusercontent.com/11637437/29684816-2e5614a0-88c8-11e7-8a67-2bddb30b2999.png" alt="Job" style="float:center;">
 
 Students are Retirees are amongst the people most likely to subscribe (25-30% subscribed), whereas it was half as successful for the professions that are greater in numbers such as Administrators, Blue-Collar and Technicians.
 
