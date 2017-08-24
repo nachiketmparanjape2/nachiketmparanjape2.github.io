@@ -6,7 +6,15 @@ date: 2017-08-23
 
 
 Note : This [repository](https://github.com/nachiketmparanjape/Bank_UCI) contains the code, the jupyter notebooks, the images and a report for this project.
-# Introduction
+
+### Jump to
+**
+* [Introduction]
+* [Data Exploration]
+* [Features and Machine Learning] **
+
+
+# [Introduction]: Introduction
 
 We all are familiar with the concept of [Telemarketing](https://en.wikipedia.org/wiki/Telemarketing). While it is an effective marketing tool for certain use cases, it is probably the slowest and most expensive in terms of outreach, as it involves company employee(s) manually contacting prospective consumers.
 
@@ -16,7 +24,7 @@ Along with the primary goal of binary classification, we explore secondary quali
 
 The [dateset](http://archive.ics.uci.edu/ml/datasets/Bank+Marketing) 41,188 datapoints with 20 attributes and one output variable.
 
-# Data Exploration
+# [Date Exploration]: Data Exploration
 
 Let's see at some of the visualization that can help us to get a qualitative idea about the data, especially the categorical variables that are relatively easy to comprehend.
 
@@ -84,7 +92,7 @@ We can also see correlation between variables that seem visibly correlated in th
 
 [insert image here]
 
-# Prep and Data Science
+# [Features and Machine Learning]: Prep and Data Science
 
 
 
