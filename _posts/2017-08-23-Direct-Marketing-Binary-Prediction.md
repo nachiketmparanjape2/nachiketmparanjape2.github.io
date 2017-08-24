@@ -9,11 +9,11 @@ Note : This [repository](https://github.com/nachiketmparanjape/Bank_UCI) contain
 
 ### Jump to
 
-** [Introduction](#introduction) **
+[Introduction](#introduction)
 
-** [Data Exploration](#data-exploration) **
+[Data Exploration](#data-exploration)
 
-** [Features and Machine Learning](#prep-and-data-science) **
+[Features and Machine Learning](#prep-and-data-science)
 
 
 # Introduction
@@ -95,6 +95,24 @@ We can also see correlation between variables that seem visibly correlated in th
 [insert image here]
 
 # Prep and Data Science
+
+As an initial step, I started with encoding categorical variables according to the type of category. The cateogorical variables that we have can further be divided subcategories as follows. The list contain description and the method of encoding -
+
+** * Two Categories (default, housing, loan) **
+Encoded by mapping 0 and 1 directly
+** * Multiple Categories - no hierarchy (job, marital, contact, month, day_of_week, poutcome) **
+Encoded by create a separate column for each category
+** * Multiple Categories - hierarchy (education) **
+Encoded by assigning levels in a single category (0,1,2,etc)
+
+Then, all of these features along with numerical features were normalized between the range 0-1 to be used to train logistic regression, support vector machines as well as K-mean clustering. The data was used without normalization for decision tree based methods. Formula used for the purpose -
+
+*z<sub>i</sub>=x<sub>i</sub>−min(x) / max(x)−min(x)*
+
+Where, *z<sub>i</sub>*- normalized value
+    *x<sub>i</sub>* - value to be normalized
+    *x* - array of numbers containing all the values of feature 'x'
+
 
 
 
