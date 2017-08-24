@@ -8,13 +8,12 @@ date: 2017-08-23
 Note : This [repository](https://github.com/nachiketmparanjape/Bank_UCI) contains the code, the jupyter notebooks, the images and a report for this project.
 
 ### Jump to
-**
 * [Introduction]
 * [Data Exploration]
-* [Features and Machine Learning] **
+* [Features and Machine Learning]
 
 
-# [Introduction]: Introduction
+[Introduction]: Introduction
 
 We all are familiar with the concept of [Telemarketing](https://en.wikipedia.org/wiki/Telemarketing). While it is an effective marketing tool for certain use cases, it is probably the slowest and most expensive in terms of outreach, as it involves company employee(s) manually contacting prospective consumers.
 
