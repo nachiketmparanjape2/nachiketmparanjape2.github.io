@@ -8,9 +8,9 @@ date: 2017-08-23
 Note : This [repository](https://github.com/nachiketmparanjape/Bank_UCI) contains the code, the jupyter notebooks, the images and a report for this project.
 
 ### Jump to
-* [Introduction](#introduction)
-* [Data Exploration](#data-exploration)
-* [Features and Machine Learning](#prep-and-data-science)
+* ** [Introduction](#introduction) **
+* ** [Data Exploration](#data-exploration) **
+* ** [Features and Machine Learning](#prep-and-data-science) **
 
 
 # Introduction
