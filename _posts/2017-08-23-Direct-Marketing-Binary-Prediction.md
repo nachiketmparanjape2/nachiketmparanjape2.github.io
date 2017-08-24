@@ -12,17 +12,17 @@ Note : This [repository](https://github.com/nachiketmparanjape/Bank_UCI) contain
   
   Along with the primary goal of binary classification, we explore secondary qualitative insights about specific sections of societies that might respond to a specific type of marketing technique or a specific product. Let's start!
   
-  ### Dataset
+### Dataset
   
   The [dateset](http://archive.ics.uci.edu/ml/datasets/Bank+Marketing) 41,188 datapoints with 20 attributes and one output variable.
   
- # Data Exploration
+# Data Exploration
  
  Let's see at some of the visualization that can help us to get a qualitative idea about the data, especially the categorical variables that are relatively easy to comprehend.
  
- ## Categorical Variables
+## Categorical Variables
  
- ### 1. Age
+### 1. Age
  Kernel Density Estimation Plot with the hue of output variable 'y'
  
  [insert image here]
