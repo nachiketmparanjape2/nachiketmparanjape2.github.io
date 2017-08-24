@@ -3,6 +3,8 @@ layout: post
 title: "Predicting Customers' Response to a Marketing Campaign"
 date: 2017-08-23
 ---
+<p style="text-align: center;">
+
 Note : This [repository](https://github.com/nachiketmparanjape/Bank_UCI) contains the code, the jupyter notebooks, the images and a report for this project.
 # Introduction
 
@@ -86,3 +88,6 @@ We can also see correlation between variables that seem visibly correlated in th
 
 
 
+
+
+</p>
