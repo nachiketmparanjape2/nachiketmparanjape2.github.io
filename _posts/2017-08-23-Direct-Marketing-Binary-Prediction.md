@@ -110,10 +110,10 @@ Then, all of these features along with numerical features were normalized betwee
 *z<sub>i</sub>=x<sub>i</sub>−min(x) / max(x)−min(x)*
 
 Where,   *z<sub>i</sub>*- normalized value
-         
-         *x<sub>i</sub>* - value to be normalized
-         
-         *x* - array of numbers containing all the values of feature '*x*'
+
+*x<sub>i</sub>* - value to be normalized
+
+*x* - array of numbers containing all the values of feature '*x*'
 
 
 
