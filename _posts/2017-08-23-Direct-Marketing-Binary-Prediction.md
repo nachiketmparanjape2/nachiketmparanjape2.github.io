@@ -107,7 +107,7 @@ Encoded by assigning levels in a single category (0,1,2,etc)
 
 Then, all of these features along with numerical features were normalized between the range 0-1 to be used to train logistic regression, support vector machines as well as K-mean clustering. The data was used without normalization for decision tree based methods. Formula used for the purpose -
 
-<span style="text-align: center;font-style: italic;"> z<sub>i</sub>=x<sub>i</sub>−min(x) / max(x)−min(x) </span>
+<p align="center"><em> z<sub>i</sub>=x<sub>i</sub>−min(x) / max(x)−min(x) </em></p>
 
 Where,   *z<sub>i</sub>*- normalized value
 
