@@ -98,26 +98,54 @@ We can also see correlation between variables that seem visibly correlated in th
 
 As an initial step, I started with encoding categorical variables according to the type of category. The cateogorical variables that we have can further be divided subcategories as follows. The list contain description and the method of encoding -
 
-** * Two Categories (default, housing, loan) **
+ * **Two Categories (default, housing, loan)**
+ 
 Encoded by mapping 0 and 1 directly
-** * Multiple Categories - no hierarchy (job, marital, contact, month, day_of_week, poutcome) **
+* **Multiple Categories - no hierarchy (job, marital, contact, month, day_of_week, poutcome)**
+
 Encoded by create a separate column for each category
-** * Multiple Categories - hierarchy (education) **
+* **Multiple Categories - hierarchy (education)**
+
 Encoded by assigning levels in a single category (0,1,2,etc)
 
-Then, all of these features along with numerical features were normalized between the range 0-1 to be used to train logistic regression, support vector machines as well as K-mean clustering. The data was used without normalization for decision tree based methods. Formula used for the purpose -
+Then, all of these features along with numerical features were normalized between the range 0-1 to be used to train logistic regression, support vector machines as well as K-means clustering. The data was used without normalization for decision tree based methods. Formula used for the purpose -
 
 <p align="center"><em> z<sub>i</sub>=x<sub>i</sub>−min(x) / max(x)−min(x) </em></p>
 
-Where,   *z<sub>i</sub>*- normalized value
-
-*x<sub>i</sub>* - value to be normalized
-
-*x* - array of numbers containing all the values of feature '*x*'
+Where,  *z<sub>i</sub>*- normalized value;     *x<sub>i</sub>* - value to be normalized;     *x* - array of numbers containing all the values of feature '*x*'
 
 
+I deleted the datapoints corresponding to 71 missing datapoints in "marital" as well as 330 datapoints in the "job" columns. For the rest of the missing data _(default : 8597, housing : 990, loan : 990, education : 1596)_, I used random forest to populate the missing space with predicted values.
+      
+------
 
+After the data was cleaned and features were finalized, we employed logistic regression, support vector machines and a few varieties of ensemble methods using decision trees.
 
+When the models were tuned for overall accuracy score, approximately 90% accuracy was achieved. It can be observed that the data is asymmetric with only about 11% of the customers with positive response. Also, when we dive in a little deeper and observe the recall scores within the positive and negative responses, here’s the result for the model optimized for overall accuracy score -
 
+[insert results here]
 
+As we can see from the data, although the accuracy score is good, we see 80% of the positives wrongly predicted as negatives. To put that in other words, we still have a large proportion of false negative and for our prediction model to be more useful we need to minimize that number, which implies maximizing recall while minimizing the possible increase in false positives. But, in our case, even if we end up increasing comparable numbers of false positives and true positives, it will still be more useful to us than the current model.
+
+#### Hence, to improve recall I used a two step-approach -
+
+##### New Features
+
+**1. I binned a few numerical features to convert them to categorical as follows -**
+
+1) pdayscat - Converted pdays into a binary category
+      1) Customer was not contacted for previous campaign (pdays = 999)
+      2) Customer was contacted for previous campaign (pdays != 999)
+2) agecat - Converted age into 3 categories based on observation
+      1) age <= 23
+      2) 23 < age < 62
+      3) age >= 62
+3) campcat - Converted Campaign (number of contacts performed during this campaign and for this client) into a binary category based on observation
+      1) campaign <= 12
+      2) campaign > 12
+      
+**2. lustering for Feature Extraction -**
+    I used two variables - age and campaign, performed clustering on them by manually seeding 4 centroids for 4 clusters to create another feature based on observation. The following figure to the left contains a scatter plot of the two variables with the hue of the response variable and the one to the right contains a scatter plot showing the clusters -
+
+[insert image here]
 
