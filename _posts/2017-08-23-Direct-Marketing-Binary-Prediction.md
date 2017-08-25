@@ -7,14 +7,7 @@ date: 2017-08-23
 
 Note : This [repository](https://github.com/nachiketmparanjape/Bank_UCI) contains the code and the jupyter notebooks. This is the [report](https://docs.google.com/document/d/1xeAxD7FS3owV1hpMB-60B5gfO7iFvREwQ2YPB1Qp_co/edit?usp=sharing).
 
-## Jump to
-
-[Introduction](#introduction)
-
-[Data Exploration](#data-exploration)
-
-[Features and Machine Learning](#prep-and-data-science)
-
+### Jump to [Data Exploration](#data-exploration) or [Features and Machine Learning](#prep-and-data-science)
 
 # Introduction
 We all are familiar with the concept of [Telemarketing](https://en.wikipedia.org/wiki/Telemarketing). While it is an effective marketing tool for certain use cases, it is probably the slowest and most expensive in terms of outreach, as it involves company employee(s) manually contacting prospective consumers.
@@ -62,9 +55,9 @@ Here, 20% of illiterate population (total population is insignificantly small) s
 
 #### Hypothesis Test
 Even though have very few illiterate people in our data (1014 datapoints or approximately 2.5% of the data), let's try testing our assumption using hypothesis testing.
-**
-1. Null Hypothesis - Probability of response is same for illiterate as well as other people
-2. Alternate Hypothesis - Probability of response is more for illiterate people **
+
+**1. Null Hypothesis - Probability of response is same for illiterate as well as other people
+2. Alternate Hypothesis - Probability of response is more for illiterate people**
 
 P-value for T-test turns out to be 7.25%. If we consider 5% as a threshold. So, unfortunately, we cannot rule out the null hypothesis.
 
