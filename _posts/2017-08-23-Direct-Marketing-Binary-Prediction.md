@@ -7,7 +7,7 @@ date: 2017-08-23
 
 Note : This [repository](https://github.com/nachiketmparanjape/Bank_UCI) contains the code and the jupyter notebooks. This is the [report](https://docs.google.com/document/d/1xeAxD7FS3owV1hpMB-60B5gfO7iFvREwQ2YPB1Qp_co/edit?usp=sharing).
 
-### Jump to [Data Exploration](#data-exploration) or [Features and Machine Learning](#prep-and-data-science)
+### Jump to [Data Exploration](#data-exploration) or [Features and Prediction](#features-and-prediction)
 
 # Introduction
 We all are familiar with the concept of [Telemarketing](https://en.wikipedia.org/wiki/Telemarketing). While it is an effective marketing tool for certain use cases, it is probably the slowest and most expensive in terms of outreach, as it involves company employee(s) manually contacting prospective consumers.
@@ -88,7 +88,7 @@ We can also see correlation between variables that seem visibly correlated in th
 
 ![table](https://user-images.githubusercontent.com/11637437/29685203-96327fc2-88c9-11e7-9de9-42f3df408840.png)
 
-# Prep and Data Science
+# Features and Prediction
 
 As an initial step, I started with encoding categorical variables according to the type of category. The cateogorical variables that we have can further be divided subcategories as follows. The list contain description and the method of encoding -
 
