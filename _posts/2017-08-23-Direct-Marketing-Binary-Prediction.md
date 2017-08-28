@@ -113,13 +113,13 @@ I deleted the datapoints corresponding to 71 missing datapoints in "marital" as 
       
 ------
 
-After the data was cleaned and features were finalized, we employed logistic regression, support vector machines and a few varieties of ensemble methods using decision trees.
+After the data was cleaned and features were finalized, we employed logistic regression, support vector machines and a few varieties of ensemble methods using decision trees. As the decision trees with gradient boosting performed well, let's use that model from now on to assess performance.
 
-When the models were tuned for overall accuracy score, approximately 90% accuracy was achieved. It can be observed that the data is asymmetric with only about 11% of the customers with positive response. Also, when we dive in a little deeper and observe the recall scores within the positive and negative responses, here’s the result for the model optimized for overall accuracy score -
+When the model was tuned for overall accuracy score, an accuracy score of 90.05% was achieved. It is a very good result to start with. Also, when we dive in a little deeper and observe the recall scores within the positive and negative responses, here’s the result for the model optimized for overall accuracy score -
 
-[insert results here]
+![result_1](https://user-images.githubusercontent.com/11637437/29794671-d5d18c04-8bfd-11e7-962a-2e4ba7869180.PNG)
 
-As we can see from the data, although the accuracy score is good, we see 80% of the positives wrongly predicted as negatives. To put that in other words, we still have a large proportion of false negative and for our prediction model to be more useful we need to minimize that number, which implies maximizing recall while minimizing the possible increase in false positives. But, in our case, even if we end up increasing comparable numbers of false positives and true positives, it will still be more useful to us than the current model.
+As we can see from the data, although the accuracy score is good, we see from the confusian matrix as well as recall score that 80% of the positives wrongly predicted as negatives. To put that in other words, we still have a large proportion of false negative and for our prediction model to be more useful we need to minimize that number, which implies maximizing recall while minimizing the possible increase in false positives. But, in our case, even if we end up increasing comparable numbers of false positives and true positives, it will still be more useful to us than the current model.
 
 Hence, to improve recall I used a two step-approach -
 
@@ -151,16 +151,17 @@ Hence, to improve recall I used a two step-approach -
 </ol>
 
 **2. Clustering for Feature Extraction -**
-    I used two variables - age and campaign, performed clustering on them by manually seeding 4 centroids for 4 clusters to create another feature based on observation. The following figure to the left contains a scatter plot of the two variables with the hue of the response variable and the one to the right contains a scatter plot showing the clusters -
+    I used all of the variables, performed clustering using 20 clusters (used trial and error). Ran the clustering multiple times with random seeding to verify the consistency of the clustering. The following figure to the left contains a scatter plot of the two variables with the hue of the response variable and the one to the right contains a scatter plot showing the clusters. I used PCA to be able to plot the results within two dimensions -
 
-![scatter1](https://user-images.githubusercontent.com/11637437/29685204-9717b39e-88c9-11e7-876c-940947b6c120.png)
+![20cluster_7](https://user-images.githubusercontent.com/11637437/29794356-8cf6ab6e-8bfc-11e7-8807-36ed5561638e.png)
 
 ### Overfitting
 
-I also found out that if I overfit my model to a certain degree, it improves prediction of true positives without compromising too much on the accuracy on the test set. In my personal opinion, a certain degree of overfit is reasonable in the case.
+I also found out that if I overfit my model to a certain degree, it improves prediction of true positives without compromising too much on the accuracy on the test set. In my personal opinion, a certain degree of overfit is reasonable in the case. That being said, it is important for the model to be *consistent* and *generalizable*. Hence, **I ran simulations** to verify that the model is fairly robust. I performed random several train, test and validation splits on the data 20 times and changed the proportion of test data from 20% to 60% of the total available data. The results were consistent.
+
 
 ## Final Evaluation
 
 Hence, here is my final model and the final results.
 
-[final results]
+![result_final](https://user-images.githubusercontent.com/11637437/29794670-d5d0de62-8bfd-11e7-8cda-86f7795c5791.PNG)
