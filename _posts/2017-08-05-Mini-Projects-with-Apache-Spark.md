@@ -12,7 +12,7 @@ date: 2017-08-05
   * Here's a bar plot where I counted words from Julius Caesar -
   
   
-![Julius Caesar](https://github.com/nachiketmparanjape/Spark-Projects-Exercises/blob/master/zImages/Top_20_words_used_in_Julius_Caesar.png)
+![top_20_words_used_in_julius_caesar](https://user-images.githubusercontent.com/11637437/29984549-ca15b38a-8f0f-11e7-96fe-2b8115b8da4a.png)
 
 
 
