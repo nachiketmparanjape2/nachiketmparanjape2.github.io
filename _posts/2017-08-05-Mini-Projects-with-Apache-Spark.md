@@ -1,6 +1,12 @@
+---
+layout: post
+title: "Mini-Projects with Apache Spark!"
+date: 2017-08-05
+---
+
 # Spark!
 
-## This Repo contains small projects and exercises in the form of ipython notebooks
+## Here are the links to my small projects and exercises in Apache Spark. I will update it as a do more and more.
 
 ### 1. [Springboard's Spark ML Exercise - Map-Reduce using spark, Spark DataFrames](https://github.com/nachiketmparanjape/Spark-Projects-Exercises/blob/master/PySpark-Notebook-1/pyspark.ipynb "Jupyter Notebook")
   * Here's a bar plot where I counted words from Julius Caesar -
