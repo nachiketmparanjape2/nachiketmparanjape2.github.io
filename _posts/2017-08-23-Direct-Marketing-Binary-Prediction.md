@@ -157,7 +157,7 @@ Hence, to improve recall I used a two step-approach -
 
 ### Overfitting
 
-I also found out that if I overfit my model to a certain degree, it improves prediction of true positives without compromising too much on the accuracy on the test set. In my personal opinion, a certain degree of overfit is reasonable in the case. That being said, it is important for the model to be *consistent* and *generalizable*. Hence, **I ran simulations** to verify that the model is fairly robust. I performed random several train, test and validation splits on the data 20 times and changed the proportion of test data from 20% to 60% of the total available data. The results were consistent.
+I also found out that if I overfit my model to a certain degree, it improves prediction of true positives without compromising too much on the accuracy on the test set. In my personal opinion, a certain degree of overfit is reasonable in the case. That being said, it is important for the model to be *consistent* and *generalizable*. Hence, **I ran simulations** to verify that the model is fairly robust. I performed random several train, test and validation splits on the data 15 times and changed the proportion of test data from 20% to 60% of the total available data. The results were consistent.
 
 Following is the summary of my results of the "consistency test" -
 
