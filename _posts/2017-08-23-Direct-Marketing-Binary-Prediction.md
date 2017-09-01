@@ -28,21 +28,21 @@ Let's see at some of the visualization that can help us to get a qualitative ide
 Kernel Density Estimation Plot with the hue of output variable 'y'
 
 
-![age-kde-plot](https://user-images.githubusercontent.com/11637437/29684734-e0649712-88c7-11e7-9591-5abf0c093b05.png)
+![age-kde-plot](https://user-images.githubusercontent.com/11637437/29989346-372e8084-8f27-11e7-8d06-18942a7ea83e.png)
 
 We can see that the response is better from the people who are young (below 29) and old (above 60)
 
 ### 2. Job
 Here is a bar plot representing proportional success for every profession category
 
-![job-bar-plot](https://user-images.githubusercontent.com/11637437/29684816-2e5614a0-88c8-11e7-8a67-2bddb30b2999.png)
+![job-bar-plot](https://user-images.githubusercontent.com/11637437/29989355-47633008-8f27-11e7-92a9-72bec9c3e513.png)
 
 Students are Retirees are amongst the people most likely to subscribe (25-30% subscribed), whereas it was half as successful for the professions that are greater in numbers such as Administrators, Blue-Collar and Technicians.
 
 ### 3. Marital Status
 How does it translate into successful subscriptions?
 
-![marital-status-plot](https://user-images.githubusercontent.com/11637437/29685173-7ee8d190-88c9-11e7-8a8c-f3f07f52a24a.png)
+![marital-status-plot](https://user-images.githubusercontent.com/11637437/29989360-50ec8f48-8f27-11e7-990f-95b770601430.png)
 
 The probability of acceptance is (4%) more for single people. Which corroborates the hypothesis that more students are accepting the subscriptions than the others.
 
@@ -56,14 +56,14 @@ Here, 20% of illiterate population (total population is insignificantly small) s
 #### Hypothesis Test
 Even though have very few illiterate people in our data (1014 datapoints or approximately 2.5% of the data), let's try testing our assumption using hypothesis testing.
 
-**1. Null Hypothesis - Probability of response is same for illiterate as well as other people
-2. Alternate Hypothesis - Probability of response is more for illiterate people**
+1. **Null Hypothesis - Probability of response is same for illiterate as well as other people**
+2. **Alternate Hypothesis - Probability of response is more for illiterate people**
 
 P-value for T-test turns out to be 7.25%. If we consider 5% as a threshold. So, unfortunately, we cannot rule out the null hypothesis.
 
 ### 5. Method of Contact
 
-![method-of-contact-plot](https://user-images.githubusercontent.com/11637437/29685195-919d7d68-88c9-11e7-86ab-5be954618326.png)
+![method-of-contact-plot](https://user-images.githubusercontent.com/11637437/29989381-6894d7f4-8f27-11e7-9851-34d446e3e0f3.png)
 
 
 Mean values for positive response are - 6% for telephone and 16% for cellular with relatively small std. Thus, we can assume an inclination towards cellular phone.
@@ -72,7 +72,7 @@ Mean values for positive response are - 6% for telephone and 16% for cellular wi
 
 ** Correlation Heatmap **
 
-![numerical-colormap](https://user-images.githubusercontent.com/11637437/29685199-92c8dc1e-88c9-11e7-9474-6f7671c4cb6c.png)
+![numerical-colormap](https://user-images.githubusercontent.com/11637437/29989377-6580e332-8f27-11e7-83bc-da5d26e0e26a.png)
 
 Following correlations seem strong -
 
@@ -115,7 +115,7 @@ I deleted the datapoints corresponding to 71 missing datapoints in "marital" as 
 
 After the data was cleaned and features were finalized, we employed logistic regression, support vector machines and a few varieties of ensemble methods using decision trees. As the decision trees with gradient boosting performed well, let's use that model from now on to assess performance.
 
-When the model was tuned for overall accuracy score, an accuracy score of 90.05% was achieved. It is a very good result to start with. Also, when we dive in a little deeper and observe the recall scores within the positive and negative responses, here’s the result for the model optimized for overall accuracy score -
+When the model was tuned for overall accuracy score, an accuracy score of 90.05% was achieved. It is a very good result to start with. Also, when we dive in a little deeper and observe the recall scores within the positive and negative responses, here’s an example of the result for the model optimized for overall accuracy score -
 
 ![result_1](https://user-images.githubusercontent.com/11637437/29794671-d5d18c04-8bfd-11e7-962a-2e4ba7869180.PNG)
 
@@ -159,6 +159,9 @@ Hence, to improve recall I used a two step-approach -
 
 I also found out that if I overfit my model to a certain degree, it improves prediction of true positives without compromising too much on the accuracy on the test set. In my personal opinion, a certain degree of overfit is reasonable in the case. That being said, it is important for the model to be *consistent* and *generalizable*. Hence, **I ran simulations** to verify that the model is fairly robust. I performed random several train, test and validation splits on the data 20 times and changed the proportion of test data from 20% to 60% of the total available data. The results were consistent.
 
+Following is the summary of my results of the "consistency test" -
+
+![overfit_consistency](https://user-images.githubusercontent.com/11637437/29989526-6f7a60a6-8f28-11e7-91a1-1f2de7921696.PNG)
 
 ## Final Evaluation
 
