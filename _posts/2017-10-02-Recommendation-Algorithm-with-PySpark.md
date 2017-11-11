@@ -99,13 +99,13 @@ Top 20 artists whose songs are played the most number of times (plays)
 
 **Top 20 countries**
 
-Top 20 countries where the users are most active in terms of number of songs played cumulatively
+Top 20 countries where the users are most active in terms of number of times the songs are played cumulatively (sum)
 
 ![top-countries](https://user-images.githubusercontent.com/11637437/31066714-c306d93c-a703-11e7-811f-14b850e2cca0.png)
 
 **Gender Proportions**
 
-Gender proportions of the users registered on the website
+Number of males and females registered as users on the website
 
 ![gender-ratio](https://user-images.githubusercontent.com/11637437/31066715-c306eba2-a703-11e7-9a30-93e0cdc7bceb.png)
 
