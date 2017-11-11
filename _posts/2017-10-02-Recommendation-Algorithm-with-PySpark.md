@@ -11,7 +11,7 @@ For companies which have business in the domains such as media streaming, e-comm
     
 In this project, we can leverage customer data from last.fm to build recommendation systems that can provide personalized recommendations using listening history and / or user information such as user age, location, gender, etc.
     
-Apart from building a recommendation algorithm, I have also used this project to introduce myself to Apache Spark. I have used ALS tool from pyspark to build a matrix factorization based recommendation algorithm. Apart from this algorithm, I also use k-means clustering to aggregate data based on users’ age, gender and country to make crude recommendation for users without any listening history.
+Apart from building a recommendation algorithm, I have decided to use Apache Spark to solve this problem, because I find it to be an appropriate tool for this project as I'm dealing with a large amount of data. Also, I'm using Spark because I get to showcase my pyspark skills as well! I have used ALS tool from pyspark to build a matrix factorization based recommendation algorithm. Apart from this algorithm, I also use k-means clustering to aggregate data based on users’ age, gender and country to make crude recommendation for users without any listening history.
 
 ## Who is it useful for?
 ### Music Streaming Company
@@ -23,8 +23,7 @@ Apart from building a recommendation algorithm, I have also used this project to
 * More likely to discover likeable new music (that’s what a good recommendation means!)
 ### Artists
 * Easier for new artists to be discovered
-* Better discovery of music in general
-* Components of the Problem
+* Better discovery of music in general
 
 # Data
 The data I’m using for this project is collected from a website last.fm. This link contains anonymized user data from the website. Here are some statistics about the dataset
@@ -59,11 +58,13 @@ usersha1-profile.tsv
 
 
 ## Uses and Limitations of the data
+
 ### Uses
 One datafile contains information of the number of times a user has listened to a song aggregated to the artist-level. So, it is number of times a user who has listened to a particular artist. The other one has information about the customer - gender, age, country and signup date.
 
 Apart from building a recommendation system that I am building, such data can be used to gamify music listening experience to improve engagement by rewarding listeners in some way (badges, points etc.). Also, it can be used to create a social network like platform where you can follow and connect with people with similar musical tastes.
-Limitations
+
+### Limitations
 
 This data is aggregated to an artist-level, hence lacks full granularity. Also, it does not contains information on the timeline for every user, so we wouldn’t know if someone has stopped listening to someone and we will not be able to recommend based on recent listening history.
 
@@ -72,7 +73,7 @@ User information can be augmented by getting user’s full digital footprint by 
 ### Data Cleaning
 #### Users’ Data
 
-The data is relatively clean already. The age column has unreasonable values (less than 0 and more than 122) which are replaced by null values and all other columns are kept intact. After that, we delete all rows containing null values in any of their columns (age, gender, country). As we do not have sufficient information to predict the unknown values, we do not have any other option. This only done for a clustering-based recommendation, as ALS does not require this information for making recommendations.
+The data is relatively clean already. The age column has unreasonable values (less than 0 and more than 122) which are replaced by null values and all other columns are kept intact. After that, we delete all rows containing null values in any of their columns (age, gender, country), during which approximately 5% of the data is lost. As we do not have sufficient information to predict the unknown values, we do not have any other option. This only done for a clustering-based recommendation, as ALS does not require this information for making recommendations.
 
 #### Listening Data
 
@@ -84,24 +85,31 @@ This data needs two main cleaning tasks -
 Here are some interesting visualizations from the data -
 
 **Activity of 20 most active listeners**
+This plot displays top 20 listeners with their respective play counts
 
 ![10-most-active-listeners](https://user-images.githubusercontent.com/11637437/31066718-c312f8b6-a703-11e7-958b-1dd55bd0b463.png)
 
 **20 Most Popular Artists**
+Top 20 artists whose songs are played the most number of times (plays)
 
 ![10-most-popular-artists](https://user-images.githubusercontent.com/11637437/31066721-c31a4a4e-a703-11e7-8319-95ed0924477e.png)
 
 **Top 20 countries**
+Top 20 countries where the users are most active in terms of number of songs played cumulatively
 
 ![top-countries](https://user-images.githubusercontent.com/11637437/31066714-c306d93c-a703-11e7-811f-14b850e2cca0.png)
 
 **Gender Proportions**
+Gender proportions of the users registered on the website
 
 ![gender-ratio](https://user-images.githubusercontent.com/11637437/31066715-c306eba2-a703-11e7-9a30-93e0cdc7bceb.png)
 
 **Age Distribution**
+Age distribution of the users registered on the website
 
 ![age-distribution](https://user-images.githubusercontent.com/11637437/31066719-c3189960-a703-11e7-9b96-a494432a362f.png)
+
+## Following visualization show the sign-ups over different aggregation levels such as over the months, years and weeks.
 
 **Sign-ups over the years**
 
