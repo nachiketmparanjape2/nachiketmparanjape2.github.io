@@ -82,29 +82,35 @@ This data needs two main cleaning tasks -
 2.  Duplicate artist names. There are more than one ways in which a single artist is named in the artist column. We need some normalization, regularization and text processing to deal with this issue.
 
 # Preliminary Data Exploration
+
 Here are some interesting visualizations from the data -
 
 **Activity of 20 most active listeners**
+
 This plot displays top 20 listeners with their respective play counts
 
 ![10-most-active-listeners](https://user-images.githubusercontent.com/11637437/31066718-c312f8b6-a703-11e7-958b-1dd55bd0b463.png)
 
 **20 Most Popular Artists**
+
 Top 20 artists whose songs are played the most number of times (plays)
 
 ![10-most-popular-artists](https://user-images.githubusercontent.com/11637437/31066721-c31a4a4e-a703-11e7-8319-95ed0924477e.png)
 
 **Top 20 countries**
+
 Top 20 countries where the users are most active in terms of number of songs played cumulatively
 
 ![top-countries](https://user-images.githubusercontent.com/11637437/31066714-c306d93c-a703-11e7-811f-14b850e2cca0.png)
 
 **Gender Proportions**
+
 Gender proportions of the users registered on the website
 
 ![gender-ratio](https://user-images.githubusercontent.com/11637437/31066715-c306eba2-a703-11e7-9a30-93e0cdc7bceb.png)
 
 **Age Distribution**
+
 Age distribution of the users registered on the website
 
 ![age-distribution](https://user-images.githubusercontent.com/11637437/31066719-c3189960-a703-11e7-9b96-a494432a362f.png)
@@ -113,7 +119,7 @@ Age distribution of the users registered on the website
 
 **Sign-ups over the years**
 
-![signups-over-months-and-years](https://user-images.githubusercontent.com/11637437/31066716-c3075056 a703-11e7-8f98-5ade47ee873a.png)
+![signups-over-months-and-years](https://user-images.githubusercontent.com/11637437/31066716-c3075056-a703-11e7-8f98-5ade47ee873a.png)
 
 **Sign-ups per Month-of-the-year**
 
