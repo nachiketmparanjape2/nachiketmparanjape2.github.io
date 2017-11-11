@@ -117,7 +117,9 @@ Age distribution of the users registered on the website
 
 ## Following visualization show the sign-ups over different aggregation levels such as over the months, years and weeks.
 
-**Sign-ups over the years**
+**Sign-ups over the months and years**
+
+This plot shows the sum the number of sign-ups happening every month as well as years for the length of the time for which the data was recorded. Y-axis on the left has yearly aggregation (sum) while the one on the right has monthly aggregation (sum).
 
 ![signups-over-months-and-years](https://user-images.githubusercontent.com/11637437/31066716-c3075056-a703-11e7-8f98-5ade47ee873a.png)
 
