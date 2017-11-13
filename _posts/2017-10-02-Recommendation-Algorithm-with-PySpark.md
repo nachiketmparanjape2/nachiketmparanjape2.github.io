@@ -135,13 +135,13 @@ This plot shows the sum the number of sign-ups happening every month as well as 
 
 ALS model in pyspark uses 3 columns from the data - userId, artistId and plays. In simple terms, we need to construct a matrix with plays as values, userId as rows and artistId as columns, and use already present values to find missing ones. It assumes that there are ‘k’ attributes or features and each artist can be represented by the same. We try to construct the said matrix and minimize a loss function to solve the problem.
 
-We use matrix factorization (SVD) for the purpose. In this method, we approximate the original userId-artistId matrix (R) to a prduct of two k-rank matrices <math> R' = U<sup>t</sup> x M </math>. As there are many missing elements in the rating matrix R, standard SVD algorithms cannot find U and M. Alternating Least Squares (ALS) can be used to solve such low-rank matrix factorization problems as follows:
+We use matrix factorization (SVD) for the purpose. In this method, we approximate the original userId-artistId matrix (R) to a product of two k-rank matrices <math> R' = U<sup>t</sup> x M </math>. As there are many missing elements in the rating matrix R, standard SVD algorithms cannot find U and M. Alternating Least Squares (ALS) can be used to solve such low-rank matrix factorization problems as follows:
 
-1. Initialize matrix M by assigning the average plays for that artist as the first row, and small random numbers for the remaining entries.
+1. Initialize matrix M by assigning the average plays for that artist as the first row, and small random numbers for the remaining entries
 2. Fix M, Solve U by minimizing the objective function (the sum of
-squared errors);
-3. Fix U, solve M by minimizing the objective function similarly;
-4. Repeat Steps 2 and 3 until a stopping criterion is satisfied.
+squared errors)
+3. Fix U, solve M by minimizing the objective function similarly
+4. Repeat Steps 2 and 3 until a stopping criterion is satisfied
 
 ## Defining a ‘normalized’ plays variable
 
