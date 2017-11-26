@@ -174,9 +174,9 @@ While using Apache Spark, Sillhoutte Score is not a good metric as it requires c
 
 # Model Evaluation
 
-Evaluating accuracy of a model in arguably the most important aspect after you build it. As the recommender systems in real life are dynamic in nature unlike this static dataset, a few sophisticated techniques are used to measure their performance and improve it.
+Constantly evaluating accuracy of a model is arguably the most important aspect to consider after it's built. As the recommender systems in real life are dynamic in nature unlike this static dataset, a different techniques can be used to assess their performance and improve it in real-life instances.
 
-Commonly used method of **A/B testing** can be used to test a recommender system on a website. It can be evaluated using measures such as **click-through-rate** or **converstion rate** of the recommendations. The definition of conversion rate can be defined/modified as per the context specific to the case. In our case, we can define it based on how much time does a user listen to a recommended track and define a single or multiple threholds depending on that time. This can further be translated into economic output such as **generated income** or **Return on Investment**.
+Commonly used method of **[A/B testing](https://www.optimizely.com/optimization-glossary/ab-testing/)** can be used to test a recommender system on a website. It can be evaluated using measures such as **click-through-rate** or **converstion rate** of the recommendations. The definition of conversion rate can be defined/modified as per the context specific to the case. In our case, we can define it based on how much time does a user listen to a recommended track and define a single or multiple threholds depending on that time. This can further be translated into economic output such as **generated income** or **Return on Investment**.
 
 In an *"experimental"* scenario such as the one I am dealing with in this project, we can use tools such as **RMSE (root mean squared error)** and **recall score** to benchmark the performance of the algorighm. RMSE was used as the sole evaluation criteria in the famous Netflix competition. I have used the same criteria to measure the performance of my model. You can find the details in the step-by-step information about my implementation of ALS.
 
