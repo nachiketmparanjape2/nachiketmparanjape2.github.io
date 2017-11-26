@@ -154,9 +154,9 @@ Plays variable is defined as number of times an artist has been played for a par
 2.  Substituted userId and artistId by integer values using zipWithIndex() function
 3.  Fed the data to the ALS function in Apache Spark which performs matrix factorization and uses ALS to minimize the loss function
 4.  Tuned following parameters - rank, regularization parameter, alpha, iterations
-5.  Analyzed the performance using 5-fold cross validation and root-mean-squared value
+5.  Analyzed the performance using 5-fold cross validation and root-mean-squared-error (RMSE) value *(It is important to remember here that the recommendations on the full test set cannot be evaluated because of the nature of how matric factorization works. We can only evaluate for the users and artists who exist in both the training and test sets. Only that overlaping data is the available data to measure RMSE)*
 6.  Used the best parameters to train the full dataset
-7.  Used the trained model to predict top 20 artists for every user
+7.  Used the trained model to predict top 20 artists for every user
 
 # K-means Clustering
 
@@ -171,3 +171,15 @@ While using Apache Spark, Sillhoutte Score is not a good metric as it requires c
 *Thus, ALS could be used to recommend new artists to an existing user, whereas we can use the clustering algorithm to give recommendations to new users with zero or little listening experience.*
 
 *Also, as a future scope for this project, we can also create multiple composite models using different linear combinations of these two models for different use-cases.*
+
+# Model Evaluation
+
+Evaluating accuracy of a model in arguably the most important aspect after you build it. As the recommender systems in real life are dynamic in nature unlike this static dataset, a few sophisticated techniques are used to measure their performance and improve it.
+
+Commonly used method of **A/B testing** can be used to test a recommender system on a website. It can be evaluated using measures such as **click-through-rate** or **converstion rate** of the recommendations. The definition of conversion rate can be defined/modified as per the context specific to the case. In our case, we can define it based on how much time does a user listen to a recommended track and define a single or multiple threholds depending on that time. This can further be translated into economic output such as **generated income** or **Return on Investment**.
+
+In an *"experimental"* scenario such as the one I am dealing with in this project, we can use tools such as **RMSE (root mean squared error)** and **recall score** to benchmark the performance of the algorighm. RMSE was used as the sole evaluation criteria in the famous Netflix competition. I have used the same criteria to measure the performance of my model. You can find the details in the step-by-step information about my implementation of ALS.
+
+That being said, there is a shortcoming of of this method. It is that it does not work for the items with few ratings as they don’t mean much in terms of their impact on the loss. As a result, predictions for them can be off, some getting scores much higher, some much lower than actual. The former will show among top recommended items, spoiling the results. Some regularization may help mitigate the problem, but it is unlikely to eliminate it.
+
+Other way would be to evaluate using ranking. For example, we can assign rank and select top 10 recommendations, and assign a recall score or a similar reasonable metric to measure how many of those 10 are accurately predicted by the commendation algorithm. This remains to be a scope for future work for this model I've built.
