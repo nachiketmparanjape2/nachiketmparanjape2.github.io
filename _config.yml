@@ -28,3 +28,21 @@ instagram: nachiketparanjape
 tableau: nachiket.madhav.paranjape
 
 #Update all the sections by editing the files inside _includes folder.
+
+# Build settings
+markdown:       kramdown
+
+# Assets
+sass:
+  sass_dir:     _sass
+  style:        compressed
+
+# Gems
+plugins:
+  - jekyll-paginate
+  # - jemoji #Uncomment this to allow emoji in your post
+
+# Permalinks
+permalink:      /:year-:month-:day/:title
+paginate:       5
+
