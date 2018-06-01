@@ -3,10 +3,30 @@ layout: default
 title: Nachiket's Blog
 ---
 <h1>{{ page.title }}</h1>
-<ul class="posts">
+<div class="catalogue">
+  {% for post in paginator.posts %}
+    <a href="{{ post.url | prepend: site.baseurl }}" class="catalogue-item">
+      <div>
+        <time datetime="{{ post.date }}" class="catalogue-time">{{ post.date | date: "%B %d, %Y" }}</time>
+        <h1 class="catalogue-title">{{ post.title }}</h1>
+        <div class="catalogue-line"></div>
 
-	{% for post in site.posts %}
-		<li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
-		<li> </li>
-	{% endfor %}
-</ul>
+        <p>
+          {{ post.content | strip_html | truncatewords: 30 }}
+        </p>
+
+      </div>
+    </a>
+  {% endfor %}
+</div>
+
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="left arrow">&#8592;</a>
+  {% endif %}
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="right arrow">&#8594;</a>
+  {% endif %}
+
+  <span>{{ paginator.page }}</span>
+</div>
