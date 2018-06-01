@@ -4,11 +4,11 @@ title: Nachiket's Blog
 ---
 <h1>{{ page.title }}</h1>
 <ul class="posts">
-  {% for post in paginator.posts %}
+  {% for post in site.posts %}
     <a href="{{ post.url | prepend: site.baseurl }}" class="catalogue-item">
       <div>
         <time datetime="{{ post.date }}" class="catalogue-time">{{ post.date | date: "%B %d, %Y" }}</time>
-        <h1 class="catalogue-title">{{ post.title }}</h1>
+        <h3 class="catalogue-title">{{ post.title }}</h3>
         <div class="catalogue-line"></div>
 
         <p>
@@ -20,7 +20,7 @@ title: Nachiket's Blog
   {% endfor %}
 </ul>
 
-<div class="pagination">
+<!-- <div class="pagination">
   {% if paginator.previous_page %}
     <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="left arrow">&#8592;</a>
   {% endif %}
@@ -29,5 +29,5 @@ title: Nachiket's Blog
   {% endif %}
 
   <span>{{ paginator.page }}</span>
-</div>
+</div> -->
 
